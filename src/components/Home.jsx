@@ -1,6 +1,8 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+
+import { COLORS } from "./constants/colors";
+import MenuItem from "./MenuItem";
 
 /* Style */
 const Container = styled.div`
@@ -19,42 +21,27 @@ const Box = styled.div`
   align-items: center;
   width: 50%;
 `;
-const Text = styled.h2`
-  color: #fff;
-`;
 
 const Home = () => {
   return (
     <Container>
-      <Box style={{ backgroundColor: "#6a4c93" }}>
-        <NavLink to="use-state" style={{ textDecoration: "none" }}>
-          <Text>useState</Text>
-        </NavLink>
+      <Box style={{ backgroundColor: COLORS.purple1 }}>
+        <MenuItem link="use-state" text="useState" />
       </Box>
-      <Box style={{ backgroundColor: "#ffca3a" }}>
-        <NavLink to="use-state" style={{ textDecoration: "none" }}>
-          <Text>useEffect</Text>
-        </NavLink>
+      <Box style={{ backgroundColor: COLORS.yellow }}>
+        <MenuItem link="use-state" text="useEffect" />
       </Box>
-      <Box style={{ backgroundColor: "#f79256" }}>
-        <NavLink to="use-state" style={{ textDecoration: "none" }}>
-          <Text>useContext</Text>
-        </NavLink>
+      <Box style={{ backgroundColor: COLORS.orange }}>
+        <MenuItem link="use-state" text="useContext" />
       </Box>
-      <Box style={{ backgroundColor: "#1982c4" }}>
-        <NavLink to="use-state" style={{ textDecoration: "none" }}>
-          <Text>useReducer</Text>
-        </NavLink>
+      <Box style={{ backgroundColor: COLORS.lightBlue }}>
+        <MenuItem link="use-state" text="useReducer" />
       </Box>
-      <Box style={{ backgroundColor: "#7dcfb6" }}>
-        <NavLink to="use-state" style={{ textDecoration: "none" }}>
-          <Text>useCallback</Text>
-        </NavLink>
+      <Box style={{ backgroundColor: COLORS.lightGreen }}>
+        <MenuItem link="use-state" text="useCallback" />
       </Box>
-      <Box style={{ backgroundColor: "#ff595e", marginRight: "auto" }}>
-        <NavLink to="use-state" style={{ textDecoration: "none" }}>
-          <Text>useRef</Text>
-        </NavLink>
+      <Box style={{ backgroundColor: COLORS.lightRed }}>
+        <MenuItem link="use-state" text="useRef" />
       </Box>
     </Container>
   );

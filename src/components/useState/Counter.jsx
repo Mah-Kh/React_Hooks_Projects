@@ -1,18 +1,20 @@
 import { useState } from "react";
 import styled from "styled-components";
 
+import { COLORS } from "../constants/colors";
+
 const Counter = () => {
   const [count, setCount] = useState(0);
-  const [color, setColor] = useState("blue");
-  const [text, setText] = useState("grey");
+  const [color, setColor] = useState("dark");
+  const [text, setText] = useState("light");
 
-  const changeToGrey = () => {
-    setColor("grey");
-    setText("blue");
+  const changeToLight = () => {
+    setColor("light");
+    setText("dark");
   };
-  const changeToBlue = () => {
-    setColor("blue");
-    setText("grey");
+  const changeToDark = () => {
+    setColor("dark");
+    setText("light");
   };
 
   /* Style */
@@ -21,7 +23,7 @@ const Counter = () => {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #212121;
+    background-color: ${COLORS.dark};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +36,8 @@ const Counter = () => {
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
-    background: ${() => (color === "blue" ? "#0048be" : "#727272")};
+    background: ${() =>
+      color === "dark" ? COLORS.purple1 : COLORS.purpleLight};
   `;
   const Title = styled.h1`
     font-size: 4rem;
@@ -73,7 +76,7 @@ const Counter = () => {
           <Button onClick={() => setCount(count + 1)}>Click me!</Button>
           <Button
             onClick={() => {
-              color === "blue" ? changeToGrey() : changeToBlue();
+              color === "dark" ? changeToLight() : changeToDark();
             }}
           >
             {`Change to ${text}`}
