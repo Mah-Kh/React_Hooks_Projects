@@ -39,7 +39,10 @@ const Home = () => {
           <MenuItem link="use-state" text="useState" />
         </Box>
         <Box style={{ backgroundColor: COLORS.yellow }}>
-          <MenuItem link="use-state" text="useEffect" />
+          <MenuItem link="use-effect" text="useEffect" />
+        </Box>
+        <Box style={{ backgroundColor: COLORS.lightRed }}>
+          <MenuItem link="use-ref" text="useRef" />
         </Box>
         <Box style={{ backgroundColor: COLORS.orange }}>
           <MenuItem link="use-state" text="useContext" />
@@ -49,9 +52,6 @@ const Home = () => {
         </Box>
         <Box style={{ backgroundColor: COLORS.lightGreen }}>
           <MenuItem link="use-state" text="useCallback" />
-        </Box>
-        <Box style={{ backgroundColor: COLORS.lightRed }}>
-          <MenuItem link="use-state" text="useRef" />
         </Box>
       </Main>
     </Container>

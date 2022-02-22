@@ -9,6 +9,8 @@ import Counter from "./components/useState/Counter";
 import InputHistory from "./components/useState/InputHistory";
 import UseEffect from "./components/useEffect/UseEffect";
 import ScrollEffect from "./components/useEffect/ScrollEffect";
+import UseRef from "./components/useRef/UseRef";
+import HoverEffect from "./components/useRef/HoverEffect";
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
         <Route path="/use-state/input-history" element={<InputHistory />} />
         <Route path="/use-effect" element={<UseEffect />} />
         <Route path="/use-effect/scroll-effect" element={<ScrollEffect />} />
+        <Route path="/use-ref" element={<UseRef />} />
+        <Route path="/use-ref/hover-effect" element={<HoverEffect />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </>
