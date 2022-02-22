@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import { COLORS } from "../constants/colors";
+
 import MenuItem from "../MenuItem";
 
 /* Style */
@@ -34,19 +35,19 @@ const Box = styled.div`
   height: 300px;
 `;
 
-const UseState = () => {
+const UseEffect = () => {
   return (
     <Container>
       <Main>
-        <Box style={{ backgroundColor: COLORS.purple1 }}>
-          <MenuItem link="counter" text="Counter" />
+        <Box style={{ backgroundColor: COLORS.yellow }}>
+          <MenuItem link="scroll-effect" text="scroll effect" />
         </Box>
         <Box style={{ backgroundColor: COLORS.purple2 }}>
-          <MenuItem link="input-history" text="Input History" />
+          <MenuItem link="scroll-effect" text="scroll effect" />
         </Box>
       </Main>
     </Container>
   );
 };
 
-export default UseState;
+export default UseEffect;
