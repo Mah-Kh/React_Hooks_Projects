@@ -28,7 +28,7 @@ const Box = styled.div`
   justify-content: center;
   align-items: center;
   width: 50%;
-  height: 200px;
+  height: 150px;
 `;
 
 const Home = () => {
@@ -41,17 +41,23 @@ const Home = () => {
         <Box style={{ backgroundColor: COLORS.yellow }}>
           <MenuItem link="use-effect" text="useEffect" />
         </Box>
+        <Box style={{ backgroundColor: COLORS.lightBlue }}>
+          <MenuItem link="use-reducer" text="useReducer" />
+        </Box>
         <Box style={{ backgroundColor: COLORS.lightRed }}>
           <MenuItem link="use-ref" text="useRef" />
         </Box>
         <Box style={{ backgroundColor: COLORS.orange }}>
-          <MenuItem link="use-state" text="useContext" />
-        </Box>
-        <Box style={{ backgroundColor: COLORS.lightBlue }}>
-          <MenuItem link="use-state" text="useReducer" />
+          <MenuItem link="use-context" text="useContext" />
         </Box>
         <Box style={{ backgroundColor: COLORS.lightGreen }}>
-          <MenuItem link="use-state" text="useCallback" />
+          <MenuItem link="use-imperative-handle" text="useImperativeHandle" />
+        </Box>
+        <Box style={{ backgroundColor: COLORS.purple1 }}>
+          <MenuItem link="use-memo" text="useMemo" />
+        </Box>
+        <Box style={{ backgroundColor: COLORS.yellow }}>
+          <MenuItem link="use-callback" text="useCallback" />
         </Box>
       </Main>
     </Container>
